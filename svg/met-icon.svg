@@ -4,7 +4,7 @@
  path {
  	 fill: transparent;
      stroke: rgb(237, 237, 237);
-     stroke-with: 1px
+     stroke-width: .7;
  }
 
   path:hover {
