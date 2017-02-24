@@ -9,7 +9,30 @@
 g.bridge .st4{fill-rule:evenodd;clip-rule:evenodd;fill: transparent;}
 .st5{stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
 
+.rect-support1 {
+    width: 19px;
+    height: 229px;
+    position: absolute;
+    y: 375px;
+    x: 4630px;
+}
+
+.rect-support2 {
+    width: 19px;
+    height: 188px;
+    position: absolute;
+    y: 378px;
+    x: 4759px;
+}
+
 </style>
+
+
+<rect class="rect-support1"> </rect>
+
+<rect class="rect-support2"> </rect>
+
+
 <path class="st4" d="M2180.238,271.299c-0.068,0.017-0.131,0.029-0.193,0.042c0.24,0.165,0.479,0.336,0.714,0.519c0.018,0.014,0.032,0.031,0.049,0.044h0.461C2180.965,271.46,2180.562,271.219,2180.238,271.299z"/>
 <path class="st4" d="M2203.946,271.872c0.198,0.049,0.382,0.111,0.559,0.179c0.101,0,0.2-0.001,0.301-0.001c0.148,0,0.297-0.11,0.74-0.288c-0.725-0.211-2.418-0.343-4.495-0.404C2202.018,271.473,2202.983,271.635,2203.946,271.872z"/>
 <path class="st4" d="M2188.636,271.743c-0.659,0.092-1.093,0.198-1.211,0.315c0.259,0,0.516,0,0.773,0C2188.335,271.944,2188.479,271.837,2188.636,271.743z"/><g><g><g>
