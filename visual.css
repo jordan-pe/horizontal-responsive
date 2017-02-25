@@ -59,7 +59,7 @@ section {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
 }
 
-section.section1{
+section.section1, .overflow-wrap {
     overflow: hidden;
     height: 95%;
     left:0;
@@ -99,38 +99,20 @@ section.section1 {
     width: 88%;
     position: absolute;
 }
-.mountain1 {
+.mountain-1 {
     width: 42%;
     left: 10%;
     bottom: -2%;
     z-index: 100;
 }
-.mountain2 {
+.mountain-2 {
     width: 68%;
     left: 49%;
     bottom: 15%;
     z-index: 3;
 }
-.mountain-1 {
-    position: absolute;
-    bottom: 5%;
-    width: 50%;
-    z-index: ;
-}
-.mountain-2 {
-    position: absolute;
-    bottom: 5%;
-    width: 50%;
-    left: 50%;
-    z-index: -2;
-}
-.mountain-3 {
-    position: absolute;
-    bottom: 5%;
-    width: 20%;
-    left: 130%;
-    z-index: -2;
-}
+
+
 .section-helper {
     width: 200%;
     height: 10%;
@@ -146,15 +128,19 @@ section.section2 {
 /*section 2*/
 .uvm {
     width: 12%;
-    position: absolute;
     left: 6.5%;
-    bottom: 32.8%;
+    bottom: 15.8%;
 }
 .uvm-icon {
     width: 41%;
-    position: absolute;
     bottom: 10.4%;
     z-index: 5;
+}
+.uvm-text{
+    width: 30%;
+    bottom: 1.6%;
+    z-index: 8;
+    left: 7%;
 }
 .section-2-helper2 {
     width: 190%;
@@ -170,6 +156,30 @@ section.section3 {
 
 }
 /*section 3*/
+.section-3-helper {    /* grey background-texture element */
+    width: 60%;
+    height: 5%;
+    bottom: 20%;
+    position: absolute;
+    z-index: 4;
+}
+.test-area {
+    bottom: 42%;
+    left: 39%;
+    width: 14%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+
+.bridge {
+    width: 228%;
+    position: absolute;
+    left: 139%;
+    bottom: 9%;
+    z-index: 4;
+}
 .bridge-detail-left{
     top: 60%;
     left: 38%;
@@ -185,31 +195,21 @@ section.section3 {
     filter: FlipH;
     -ms-filter: "FlipH";
 }
-
-
 .bridge-support-right {
     top: 60%;
     left: 80%;
 }
-.section-3-helper {
-    width: 60%;
-    height: 5%;
-    bottom: 20%;
-    position: absolute;
-    z-index: 4;
-}
+
 .MetropolitanMuseumArt {
     width: 42%;
-    left: 200%;
-    bottom: 28.8%;
+    bottom: 24.8%;
     z-index: 6;
 }
-.bridge {
-    width: 228%;
-    position: absolute;
-    left: 139%;
-    bottom: 9%;
+.met-text {
+    width: 20%;
+    bottom: 18.5%;
     z-index: 4;
+    left: 2%;
 }
 .building-bk {
     width: 45%;
@@ -287,6 +287,16 @@ section.section4 {
     left: 48%;
     position: absolute;
 }
+
+/*Parallax elements*/
+.ufo{
+    position: relative;
+    width: 1%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+
 
 /*
 optional gratient*/
@@ -428,5 +438,16 @@ global */
   }
 }
 /*
-end clounds*/
+end clouds*/
+
+
+//simple min-width query
+@media screen and ( min-width: 600px ){
+
+}
+//simple max-width query
+@media screen and ( max-height: 600px ){
+
+}
+
 

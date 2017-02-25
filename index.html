@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="initial-scale=1">
 	<title>horizontal responsive website</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
  -->	<link rel="stylesheet" type="text/css" href="visual.css">
@@ -26,7 +27,7 @@
 	<section class="section1">
 					<object data="svg/boat.svg" class="boat-init"></object>
 					<object data="svg/waves.svg" class="waves-section1"></object>
-					<object data="svg/mountain-green.svg" class="mountain1" type=""></object>
+					<object data="svg/mountain-green.svg" class="mountain-1" type=""></object>
 
 	</section>
 
@@ -35,9 +36,12 @@
 					<!-- bottom steps -->
 					<div class="section-helper"></div>
 					<div class="section-helper section-2-helper2"></div>
+				
+					<object data="svg/uvm.svg" class="uvm" id="prlx_lyr_3"></object>
+					<object data="svg/uvm-icon.svg" class="uvm-icon" id="uvmIcon" type="image/svg+xml"></object>
+					<object data="svg/uvm-text.svg" class="uvm-text"></object>
 
-					<object data="svg/uvm.svg" class="uvm"></object>
-					<object data="svg/met-icon.svg" class="uvm-icon"></object>
+					<span id="testArea" class="test-area"></span>
 
 					
 					<object data="svg/line-7.svg" class="bridge-detail-left"></object>
@@ -51,11 +55,13 @@
 	<section class="section3">
 
 					<div class="section-helper section-3-helper"></div>
+		<object data="svg/met.svg" class="MetropolitanMuseumArt"></object>
+		<object data="svg/met-text.svg" class="met-text"></object>
 
 					<object data="svg/skyline.svg" class="building-bk"></object>
 					<object data="svg/skyline.svg" class="building-mg"></object>
 					<object data="svg/skyline.svg" class="building-fg"></object>
-					<object data="svg/skyline.svg" class="building-lg"></object>
+					<object data="svg/skyline.svg" class="building-lg" ></object>
 
 	</section>
 
@@ -76,10 +82,14 @@
 
 <!-- global extras  -->
 
-		<object data="svg/mountain-2.svg" class="mountain2" type=""></object>
-		<object data="svg/train-bridge.svg" class="bridge"></object>
-		<object data="svg/met.svg" class="MetropolitanMuseumArt"></object>
+		<object data="svg/mountain-2.svg" class="mountain-2" id="mountainTwo"></object>
+		<object data="svg/train-bridge.svg" class="bridge" ></object>
 
+<!-- Parallax elements position:relative -->
+
+<object data="svg/line-5.svg" class="ufo" id="prlx_lyr_1"></object>
+
+<!-- END - Parallax elements -->
 
 
 	<footer>
@@ -87,7 +97,12 @@
 	</footer>
 	</div> <!-- end wrapper -->
 
+	<script type="text/javascript" src="js/visual.js"></script>
 
+	<!-- <script type="text/javascript" src="js/libs/skrollr.js"></script>
+	<script type="text/javascript">
+    var s = skrollr.init();
+    </script> -->
 
 </body>
 </html>
