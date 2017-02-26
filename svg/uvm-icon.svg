@@ -5,8 +5,8 @@
  	 fill: transparent;
      stroke: rgb(237, 237, 237);
     stroke-width: 2;
-    stroke-dasharray: 1.5;
-     stroke-dashoffset: -20;
+<!--     stroke-dasharray: 1.5;
+     stroke-dashoffset: -20; -->
  }
 
   path:hover {
