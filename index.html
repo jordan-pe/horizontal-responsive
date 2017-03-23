@@ -3,10 +3,10 @@
 <head>
 	<!--   ENFORCE https:// -->
 	 <script>
-	   var loc = window.location.href+'';
-	 if (loc.indexOf('http://')==0){
-	     window.location.href = loc.replace('http://','https://');
-	 }
+	 //   var loc = window.location.href+'';
+	 // if (loc.indexOf('http://')==0){
+	 //     window.location.href = loc.replace('http://','https://');
+	 // }
 	</script>
     <meta charset="utf-8">
     <title>Horizontal Responsive Resume</title>
@@ -32,18 +32,30 @@
     <meta content="summary" property="og:type">
     <meta content="https://laf.land/favicon.png" property="og:image">
     <meta content="Fully responsive horizontal website, zero dependencies, - zero frills - just code that works. zero libraries, 100% mobile first, no media queries, svg, Github, emailto jordan@laf.land | Jordan Lafland | Developer Creative Technologist, New York, NY" property="og:description">
-    <meta content="https://laf.land/resume/visual" property="og:url">
+    <meta content="https://laf.land/resume/visual/" property="og:url">
     <meta content="Visual Resume | Jordan Lafland" property="og:site_name">
     <!--  Twitter card meta tags -->
     <meta content="summary" property="twitter:card">
-    <meta content="https://laf.land/resume/visual" name="twitter:url">
+    <meta content="https://laf.land/resume/visual/" name="twitter:url">
     <meta content="Visual Resume | Jordan Lafland" property="twitter:title">
     <meta content="Fully responsive horizontal website, zero dependencies, - zero frills - just code that works. zero libraries, 100% mobile first, no media queries, svg, Github, emailto jordan@laf.land | Jordan Lafland | Developer Creative Technologist, New York, NY" name="twitter:description">
+    <meta content="@pollencomputer" name="twitter:creator">
+    <meta content="@pollencomputer" name="twitter:site">
 	<!--  System -->
     <meta content="Visual Resume | Jordan Lafland" name="title">
     <meta content="Fully responsive horizontal website, zero dependencies, - zero frills - just code that works. zero libraries, 100% mobile first, no media queries, svg, Github, emailto jordan@laf.land | Jordan Lafland | Developer Creative Technologist, New York, NY" name="description">
     <meta content="Fully responsive horizontal website, zero dependencies, - zero frills - just code that works. zero libraries, 100% mobile first, no media queries, svg, Github, emailto jordan@laf.land | Jordan Lafland | Developer Creative Technologist, New York, NY, laf.land laf.land/resume laf.land/resume/visual" name="keywords">
-    <link href="laf.land/resume/visual" rel="canonical">
+    <link href="https://laf.land/resume/visual" rel="canonical">
+    <!--  IMAGES -->
+    <!--  FB Share Image -->
+    <meta content="https://laf.land/img/visual-resume-icon.png" name="twitter:image">  <!-- SHARE CARD -->
+    <!--  Twitter Card -->
+    <meta content="https://laf.land/img/visual-resume-icon.png" property="og:image">  <!-- SHARE IMAGE -->
+    <meta property="place:location:latitude"  content="40.730610"> <!-- NEW YORK -->
+    <meta property="place:location:longitude" content="-73.935242"> 
+    <meta property="place:location:altitude"  content="23"> <!-- feet -->
+
+
     <!--  see on giuthub: https://github.com/jordan-pe/horizontal-responsive  -->
     <!--  end meta  -->
 	<link rel="stylesheet" type="text/css" href="visual.css">
@@ -51,6 +63,7 @@
 <body>
 
 	<div class="content-wrapper">
+
 		<div class="">
 			<img class="cloud-1 clouds" src="img/cloud-1.png">
 			<img class="cloud-2 clouds" src="img/cloud-2.png">
@@ -67,15 +80,17 @@
 
 		<!-- Layout Below , top : down , left : right-->
 	<section class="section1">
-
+					<span class="timeline-indicator" id="timelineIndicator">&DownTeeArrow;</span>  <!-- timeline indicator -->
 					<object data="svg/boat.svg" class="boat-init"></object>
 					<object data="svg/waves.svg" class="waves-section1"></object>
 					<object data="svg/mountain-green.svg" class="mountain-1" type=""></object>
+					<object data="svg/vermont-road-sign.svg" class="vermont-sign" title="Born and Raised: Brattleboro, Vermont"></object>
 
 					<span class="github" id="gitIcon"></span>
 					<span class="css-icon"></span>
 					<span class="html-icon"></span>
 					<span class="js-icon"></span>
+					<h4 class="timeline-2000">2000</h4>
 	</section>
 
 	<section class="section2" id="prlx_section2">
@@ -100,7 +115,8 @@
 					<!-- graphic icons -->
 					<span class="uvm-info"></span>
 					<span class="global-children"></span>
-					<span class="startup-institute"></span>		
+					<span class="startup-institute"></span>
+					<h4 class="timeline-2010">2010</h4>	
 	</section>
 
 	<section class="section3">
@@ -117,6 +133,7 @@
 					<span class="met-info"></span>
 					<span class="general-assembly"></span>
 					<span class="fcb"></span>
+					<h4 class="timeline-2015">2015</h4>	
 
 	</section>
 
@@ -124,6 +141,7 @@
 					<!-- boat ,cached --> 
 					<object data="svg/boat.svg" class="boat"></object>
 					<!-- waves ,cached -->
+					<object data="svg/waves.svg" class="waves0"></object>
 					<object data="svg/waves.svg" class="waves1"></object>
 					<object data="svg/waves.svg" class="waves2"></object>
 					<object data="svg/waves.svg" class="waves3"></object>
@@ -151,8 +169,9 @@
 <!-- ugly text from html resume -->
 <div class="textTrap">
 		<section class="eduication-text">
+			
 			<h3>Education</h3>			
-
+			<h4 class="timeline 2010">2010</h4>
 			<h4><a href="https://www.uvm.edu/" target="_blank">University of Vermont</a></h4>
 			<p>Bachelor of Arts (B.A.), Philosophy, 2006 - 2010</p>
 			<p>Activities and Societies: President - Class of 2010, Voting member of Alumni Council</p>
@@ -161,8 +180,9 @@
 		</section>
 
 		<section class="volenteer-text">
+		
 		<h3>Volunteer Experience</h3>
-
+	
 		<span class="volenteer-item-1">
 			<h4>President Class Council of 2010 — University of Vermont</h4>
 			<p>Served for one term year and voting period of the Alumni Association</p>
@@ -178,7 +198,8 @@
 		<span class="volenteer-item-4">
 			<h4>Committee Member, SINYC Alumni Council — Startup Institute</h4>
 			<p>December 2015 - September 2016</p>
-		</span>		</section>
+		</span>		
+		</section>
 
 		<section class="work-text">
 			<h3>Work Experience</h3>
@@ -325,10 +346,38 @@
 						</span></span>  
 
 		</div>  <!-- end text area -->
-
-
 		<section class="greeting" id="greeting">
+			<p>
+				This Horizontal webpage is fully responsive.  Scroll Right  
+			</p>
+			<br>
+			<p>
+				It is a timeline, spanning the period from 2000 - 2017
+			</p>
+			<p>
+				and is a representaion of this <a href="https://jordan.lafland.pdf" target="_blank" title="PDF Resume">document</a>, expertise of Jordan Lafland
+			</p>
+			<br>
+			<p>
+				Responsive in both X and Y coordinates, this programme contains no Media Queries!
+			</p>
+			<br>
+			<p>
+				It has naturally responsive scale vector graphics (SVG)
+			</p>
+			<p>
+				A repetitive pattern of cached assets
+			</p>
+			<p>
+				Relies on best practices not overly configured libraries
+			</p>
+			<p>
+				Is convention over configuration
+			</p>
+		</section>
 
+		<section class="farewell" id="farewell">
+<!-- <button id="goFS">Go fullscreen</button> -->
 			<h3>Thanks for checking out my visual resume!</h3>
 			<p class="date">Spring 2017</p>
 
@@ -353,7 +402,7 @@
 			</p>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<span class="scroll-area">
+			<span class="scroll-area" style="visibility:hidden">
 				<p>Fully responsive horizontal website with zero dependencies - zero frills - just code that works
 				<p>zero libraries</p>
 				<p>100% mobile first</p>
@@ -404,9 +453,9 @@
 
 <footer>
 	<p title="Author"><a href="https://linkedin.com/in/jordanlafland">Jordan Lafland</a></p>
-	<p class="scroll-1"><a href="#_fin"> Scroll End--> </a></p>
-	<p class="scroll-2"><a href="#_midddle"> - Scroll Middle - </a></p>
-	<p class="scroll-3"><a href="#_start"> -- Scroll Left </a></p>
+	<p class="scroll-1"><a href="#_fin"> Scroll End --&rsaquo; </a></p>
+	<p class="scroll-2"><a href="#_midddle"> - Scroll Middle  - </a></p>
+	<p class="scroll-3"><a href="#_start"> &lsaquo;-- Scroll Left </a></p>
 	<span class="lafland"></span>
 </footer>
 

@@ -127,6 +127,15 @@ section.section1 {
 
 }
 /*section 1*/
+
+.timeline-indicator {
+    color: rgb(247, 223, 193);
+    font-size: 5em;
+    position: fixed;
+    left: 44%;
+    top: 3%;
+    z-index: 500;
+}
 .boat-init {
     bottom: 7%;
     z-index: 7;
@@ -156,6 +165,21 @@ section.section1 {
     position: absolute;
     z-index: 4;
 }
+.vermont-sign {
+    width: 10%;
+    bottom: 15%;
+    left: 45%;
+    z-index: 140;
+}
+
+.vermont-sign:hover{
+    width: 12%;
+}
+.timeline-2000 {
+    color: rgb(247, 223, 193);
+    margin-left: 45%;
+}
+
 
 section.section2 {
 
@@ -185,6 +209,12 @@ section.section2 {
     position: absolute;
     border-radius: 66% 0% 0 0;
 }
+
+.timeline-2010 {
+    color: rgb(247, 223, 193);
+    margin-left: 45%;
+}
+
 
 section.section3 {
 
@@ -261,6 +291,11 @@ section.section3 {
     filter: FlipH;
     -ms-filter: "FlipH";
 }
+.timeline-2015 {
+    color: rgb(247, 223, 193);
+    margin-left: 45%;
+}
+
 
 section.section4 {
 
@@ -272,6 +307,14 @@ section.section4 {
     left: 4%;
     position: absolute;
     z-index: 100;
+}
+.waves0 {
+    width: 226%;
+    bottom: -64%;
+    left: -36%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
 }
 .waves1 {
     width: 126%;
@@ -287,6 +330,7 @@ section.section4 {
     left: 38%;
     position: absolute;
     z-index: 1;
+    opacity:0.7;
 }
 .waves3 {
     width: 46%;
@@ -294,6 +338,7 @@ section.section4 {
     left: 61%;
     position: absolute;
     z-index: 1;
+    opacity:0.5;
 }
 .waves4 {
     width: 77%;
@@ -948,7 +993,8 @@ section.work-text {
     text-align: center;
     border-radius: 0px 28px 0 0;
 }
-.letter-area:hover { color:bisque; }
+.letter-area:hover { color:bisque; font-size: 2vw; }
+
 .letter-area i {
     font-size: 3.9em;
     font-weight: 100;
@@ -983,12 +1029,24 @@ footer .lafland {
        bottom: 3px;
 }
 footer a { text-decoration: none; color:currenColor; }
-section.greeting, section.info {
+
+section.greeting {
+    position: absolute;
+    width: 80%;
+    bottom: 75%;
+    height: 0;
+    left: 4%;
+    z-index: 400
+}
+section.farewell, section.info {
     position: absolute;
     width: 75%;
     height: 0;
+    bottom: 80%;
+    right: -290%;
+    z-index: 300;
 }
-.greeting h3 {
+.farewell h3 {
     margin: -1em 8% 0 8%;
     padding-top: 22px;
     cursor: default;
@@ -1008,18 +1066,18 @@ section.greeting, section.info {
 .greeting p {
 
 }
-.greeting p span {    /* icons */
+.greeting p span, .farewell p span {    /* icons */
     width: 15px;
     height: 20px;
     left: 0;
     position: relative;
     margin: 0px 0px -6px 0px;
 }
-.greeting p a { text-decoration: none; color: bisque; }
+.greeting p a, .farewell p a { text-decoration: none; color: bisque; }
  footer > p:nth-child(1) > a { color: bisque; }
  footer > p:nth-child(1) > a:visited { color: bisque; } 
-.greeting p a i { font-style: initial; }
-   .greeting p {
+.greeting p a i, .farewell p a i  { font-style: initial; }
+   .greeting p, .farewell p {
         line-height: 1.2;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
         background-image: -moz-linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
